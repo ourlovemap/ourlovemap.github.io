@@ -14,12 +14,15 @@ def get_food_markers():
 def get_date_markers():
     markers = [
         {
-            "name": "Primeiro Date (Gorila Beer House)", 
+            "title": "Primeiro Date",
+            "subtitle": "Gorila Beer House - 26/03/2022",
             "location": [-23.5870, -46.6480], 
-            "description": "O primeiro momento em que nossos olhos se encontraram. Me lembro até hoje da surpresa que foi cruzar a rua e encontrar a futura dona do meu coração."
+            "description": "O primeiro momento em que nossos olhos se encontraram. Me lembro até hoje da surpresa que foi cruzar a rua e encontrar a futura dona do meu coração.",
+            "image": "images/"
         },
         {
-            "name": "Segundo Date (Kinoplex Itaim)", 
+            "title": "Segundo Date", 
+            "subtitle": "Kinoplex Itaim - 27/03/2022",
             "location": [-23.5845, -46.6747], 
             "description": "Confesso que até tinha me esquecido do filme que fomos assistir, mas não me esqueço nem sequer por um milésimo de segundo do seu cheiro e do seu olhar enquanto estávamos sentados no banco."
         },
