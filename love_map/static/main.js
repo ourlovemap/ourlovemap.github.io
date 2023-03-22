@@ -12,7 +12,7 @@ L.tileLayer("https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=nC
     maxZoom: 18,
 }).addTo(map);
 
-fetch("https://love-map-api.onrender.com/api/markers")
+fetch("https://ourlovemap-api.onrender.com/api/date_markers")
   .then(response => response.json())
   .then(markers => {
     markers.forEach(marker => {

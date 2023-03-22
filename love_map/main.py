@@ -4,8 +4,14 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.route("/api/markers")
-def get_markers():
+@app.route("/api/food_markers")
+def get_food_markers():
+    markers = []
+    # Rascal, Baruk, La Pergoletta, Andiamo, Pecorino, La Piadina Cucina, Bistro Faria Lima, Izakaya Kuroda, Caires, Z Deli, Hito Vegano, El Huarique, MOMA, Sushimar Vegano, Marakuthai, Walnuts, De Segunda, 
+    return jsonify(markers)
+
+@app.route("/api/date_markers")
+def get_date_markers():
     markers = [
         {
             "name": "Primeiro Date (Gorila Beer House)", 
@@ -32,11 +38,7 @@ def get_markers():
         # Conjunto Nacional
         # SESC Pompeia
         # Veloso Bar
-
-
-
         # Banquinho no Edgard
         # Nossos endereços
             # Algumas das conversas mais pessoais que já tivemos
-        # Rascal, Baruk, La Pergoletta, Andiamo, Pecorino, La Piadina Cucina, Bistro Faria Lima, Izakaya Kuroda, Caires, Z Deli, Hito Vegano, El Huarique, MOMA, Sushimar Vegano, Marakuthai, Walnuts, De Segunda, 
     return jsonify(markers)
