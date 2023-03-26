@@ -16,40 +16,7 @@ L.tileLayer("https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=nC
     maxZoom: 18,
 }).addTo(map);
 
-// fetch("https://ourlovemap-api.onrender.com/api/food_markers")
-//   .then(response => response.json())
-//   .then(markers => {
-//     markers.forEach(marker => {
-//       var m = L.marker(marker.location, {icon: foodIcon}).addTo(map);
-//       m.bindPopup(
-//         `
-//           <h2>${marker.title}</h2>
-//           <h3>${marker.subtitle}</h3>
-//           <p>${marker.description}</p>
-//           <img src='${marker.image}' width=100% height=100%/>
-//         `
-//       ).openPopup();
-//     });
-//   });
-
-// fetch("https://ourlovemap-api.onrender.com/api/date_markers")
-//   .then(response => response.json())
-//   .then(markers => {
-//     markers.forEach(marker => {
-//       var m = L.marker(marker.location, {icon: mmIcon}).addTo(map);
-//       m.bindPopup(
-//         `
-//           <h2>${marker.title}</h2>
-//           <h3>${marker.subtitle}</h3>
-//           <p>${marker.description}</p>
-//           <img src='${marker.image}' width=100% height=100%/>
-//         `
-//       ).openPopup();
-//     });
-//   });
-
-
-fetch("http://127.0.0.1:5000/api/food_markers")
+fetch("https://ourlovemap-api.onrender.com/api/food_markers")
   .then(response => response.json())
   .then(markers => {
     markers.forEach(marker => {
@@ -65,7 +32,7 @@ fetch("http://127.0.0.1:5000/api/food_markers")
     });
   });
 
-fetch("http://127.0.0.1:5000/api/date_markers")
+fetch("https://ourlovemap-api.onrender.com/api/date_markers")
   .then(response => response.json())
   .then(markers => {
     markers.forEach(marker => {
@@ -80,3 +47,36 @@ fetch("http://127.0.0.1:5000/api/date_markers")
       ).openPopup();
     });
   });
+
+
+// fetch("http://127.0.0.1:5000/api/food_markers")
+//   .then(response => response.json())
+//   .then(markers => {
+//     markers.forEach(marker => {
+//       var m = L.marker(marker.location, {icon: foodIcon}).addTo(map);
+//       m.bindPopup(
+//         `
+//           <h2>${marker.title}</h2>
+//           <h3>${marker.subtitle}</h3>
+//           <p>${marker.description}</p>
+//           <img src='${marker.image}' width=100% height=100%/>
+//         `
+//       ).openPopup();
+//     });
+//   });
+
+// fetch("http://127.0.0.1:5000/api/date_markers")
+//   .then(response => response.json())
+//   .then(markers => {
+//     markers.forEach(marker => {
+//       var m = L.marker(marker.location, {icon: mmIcon}).addTo(map);
+//       m.bindPopup(
+//         `
+//           <h2>${marker.title}</h2>
+//           <h3>${marker.subtitle}</h3>
+//           <p>${marker.description}</p>
+//           <img src='${marker.image}' width=100% height=100%/>
+//         `
+//       ).openPopup();
+//     });
+//   });
