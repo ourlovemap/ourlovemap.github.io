@@ -36,22 +36,25 @@ def get_food_markers():
             "image": "../images/z_deli.png"
         },
         {
-            "title": "", 
-            "subtitle": " - 02/03/2022",
-            "location": [-23.5629, -46.6549], 
-            "description": "",
-            "image": "../images/.png"
+            "title": "Baruk", 
+            "subtitle": "Vários e vários dias",
+            "location": [-23.5829, -46.6760], 
+            "description": "Esse é outro lugar muito especial. Fez parte do nosso maior desastre de carnaval da história, assim como fez parte dos nossos primeiros almoços. Amo tanto cada memória que criamos nele e não as trocaria por nada.",
+            "image": "../images/baruk.png"
+        },
+        {
+            "title": "MOMA", 
+            "subtitle": "04/08/2022",
+            "location": [-23.5819, -46.6798], 
+            "description": "Amo como você se esforça para conhecer melhor meus amigos. Esse dia foi tão incrível, em que nós 4 estávamos em sintonia com as conversas, risadas, fofocas. Mesmo com a comida não sendo das melhores, o dia fechou com chave de ouro quando nos reunimos em casa.",
+            "image": "../images/moma.png"
         },
         # Pecorino
-        # Baruk vários dates
         # Si Senor 20/05/2022
         # Sushimar Vegano 19/06/2022
         # Hecho en Mexico 23/06/2022
-        # MOMA 04/08/2022
         # Hito Vegano 16/12/2022
-
     ]
-    # Rascal, Baruk, La Pergoletta, Andiamo, Pecorino, La Piadina Cucina, Bistro Faria Lima, Izakaya Kuroda, Caires, Z Deli, Hito Vegano, El Huarique, MOMA, Sushimar Vegano, Marakuthai, Walnuts, De Segunda, 
     return jsonify(markers)
 
 @app.route("/api/date_markers")
